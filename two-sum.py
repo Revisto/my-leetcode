@@ -7,4 +7,9 @@ class Solution:
                 continue
             if ideal_num2 in nums_set:
                 num1_index = nums.index(num1)
-                return sorted([num1_index, nums[num1_index + 1:].index(ideal_num2) + num1_index + 1])
+                return sorted(
+                    [
+                        num1_index,
+                        nums[num1_index + 1 :].index(ideal_num2) + num1_index + 1,
+                    ]
+                )

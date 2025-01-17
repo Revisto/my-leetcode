@@ -7,6 +7,6 @@ class Solution:
                     continue
                 num1 = nums[num1_index]
                 num2 = nums[num2_index]
-                if (-(num1 + num2)) in set(nums[num2_index + 1:]):
+                if (-(num1 + num2)) in set(nums[num2_index + 1 :]):
                     answers.add(tuple(sorted([num1, num2, -(num1 + num2)])))
         return list(answers)
